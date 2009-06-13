@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Attributes</key>
+	<array>
+		<dict>
+			<key>Description</key>
+			<string>Analog Interface (VGA/DVI-A/Component)</string>
+			<key>Key</key>
+			<string>ANALOG</string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>Discrete Display Elements (LCD/Plasma/OLED)</string>
+			<key>Key</key>
+			<string>PIXELS</string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>Projected (RPTV/Projector)</string>
+			<key>Key</key>
+			<string>PROJECTED</string>
+		</dict>
+	</array>
+	<key>Devices</key>
+	<array>
+		<dict>
+			<key>Description</key>
+			<string>LCD Monitor with DVI/HDMI interface</string>
+			<key>Attributes</key>
+			<array>
+				<string>PIXELS</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>LCD Monitor with VGA/Component interface</string>
+			<key>Attributes</key>
+			<array>
+				<string>PIXELS</string>
+				<string>ANALOG</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>LCD Projector with DVI/HDMI interface</string>
+			<key>Attributes</key>
+			<array>
+				<string>PIXELS</string>
+				<string>ANALOG</string>
+				<string>PROJECTED</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>LCD Projector with VGA/Component interface</string>
+			<key>Attributes</key>
+			<array>
+				<string>PIXELS</string>
+				<string>PROJECTED</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>CRT Monitor with VGA/Component interface</string>
+			<key>Attributes</key>
+			<array>
+				<string>ANALOG</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>CRT Projector with VGA/Component interface</string>
+			<key>Attributes</key>
+			<array>
+				<string>ANALOG</string>
+				<string>PROJECTED</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>(show_all)</string>
+			<key>Attributes</key>
+			<array>
+				<string>ANALOG</string>
+				<string>PIXELS</string>
+				<string>PROJECTED</string>
+			</array>
+		</dict>
+	</array>
+	<key>Patterns</key>
+	<array>
+		<dict>
+			<key>Active</key>
+			<true/>
+			<key>Class</key>
+			<string>CalibrationPattern</string>
+			<key>DescriptionRtfFile</key>
+			<string>text_calibration</string>
+			<key>Attributes</key>
+			<array>
+				<string>ANALOG</string>
+				<string>PIXELS</string>
+			</array>
+			<key>Title</key>
+			<string>Analog-to-digital converter calibration</string>
+		</dict>
+		<dict>
+			<key>Active</key>
+			<true/>
+			<key>Class</key>
+			<string>DeadPixelPattern</string>
+			<key>DescriptionRtfFile</key>
+			<string>text_pixels</string>
+			<key>Attributes</key>
+			<array>
+				<string>PIXELS</string>
+			</array>
+			<key>Title</key>
+			<string>Dead pixel detection</string>
+		</dict>
+		<dict>
+			<key>Active</key>
+			<true/>
+			<key>Class</key>
+			<string>ColorGradientsPattern</string>
+			<key>DescriptionRtfFile</key>
+			<string>text_gradients</string>
+			<key>Attributes</key>
+			<array/>
+			<key>Title</key>
+			<string>Color gradients verification</string>
+		</dict>
+		<dict>
+			<key>Active</key>
+			<true/>
+			<key>Class</key>
+			<string>QuartzColorGradientsPattern</string>
+			<key>DescriptionRtfFile</key>
+			<string>text_gradients</string>
+			<key>Attributes</key>
+			<array/>
+			<key>Title</key>
+			<string>Color gradients verification (using Quartz)</string>
+		</dict>
+		<dict>
+			<key>Active</key>
+			<true/>
+			<key>Class</key>
+			<string>HotspotPattern</string>
+			<key>DescriptionRtfFile</key>
+			<string>text_hotspot</string>
+			<key>Attributes</key>
+			<array>
+				<string>PROJECTED</string>
+			</array>
+			<key>Title</key>
+			<string>Hotspot intensity measurement</string>
+		</dict>
+		<dict>
+			<key>Active</key>
+			<true/>
+			<key>Class</key>
+			<string>PixelResponsePattern</string>
+			<key>DescriptionRtfFile</key>
+			<string></string>
+			<key>Attributes</key>
+			<array>
+				<string>PIXELS</string>
+			</array>
+			<key>Title</key>
+			<string>Pixel response time measurement</string>
+		</dict>
+		<dict>
+			<key>Active</key>
+			<true/>
+			<key>Class</key>
+			<string>PanelAlignmentPattern</string>
+			<key>DescriptionRtfFile</key>
+			<string>text_alignment</string>
+			<key>Attributes</key>
+			<array>
+				<string>PIXELS</string>
+				<string>PROJECTED</string>
+			</array>
+			<key>Title</key>
+			<string>Multi-panel LCD alignment pattern</string>
+		</dict>
+		<dict>
+			<key>Active</key>
+			<true/>
+			<key>Class</key>
+			<string>ContrastPattern</string>
+			<key>DescriptionRtfFile</key>
+			<string></string>
+			<key>Attributes</key>
+			<array/>
+			<key>Title</key>
+			<string>Contrast and brightness pattern</string>
+		</dict>
+	</array>
+</dict>
+</plist>

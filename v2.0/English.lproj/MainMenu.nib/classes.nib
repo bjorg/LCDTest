@@ -1,0 +1,26 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {showHelp = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {selectDevice = id; selectTest = id; selevtDevice = id; showPattern = id; }; 
+            CLASS = GuideControl; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                button = NSButton; 
+                displayDevice = NSPopUpButton; 
+                "preview_placeholder" = NSView; 
+                testDescription = NSTextView; 
+                testList = NSTableView; 
+                window = NSWindow; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = TestView; LANGUAGE = ObjC; SUPERCLASS = NSView; }
+    ); 
+    IBVersion = 1; 
+}

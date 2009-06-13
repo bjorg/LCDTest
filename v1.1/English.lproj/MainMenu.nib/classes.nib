@@ -1,0 +1,31 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {showHelp = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                showCalibration = id; 
+                showColorGradient = id; 
+                showDeadPixels = id; 
+                showPanelAlignment = id; 
+                windowWillClose = id; 
+            }; 
+            CLASS = MainControl; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                alignment = NSTextView; 
+                calibration = NSTextView; 
+                gradients = NSTextView; 
+                pixels = NSTextView; 
+                window = NSWindow; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = TestView; LANGUAGE = ObjC; SUPERCLASS = NSView; }
+    ); 
+    IBVersion = 1; 
+}
